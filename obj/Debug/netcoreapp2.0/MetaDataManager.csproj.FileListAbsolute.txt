@@ -1,0 +1,10 @@
+/Users/Carlos/Desktop/CORE-PROJECTS/MetaDataManager/bin/Debug/netcoreapp2.0/MetaDataManager.deps.json
+/Users/Carlos/Desktop/CORE-PROJECTS/MetaDataManager/bin/Debug/netcoreapp2.0/MetaDataManager.runtimeconfig.json
+/Users/Carlos/Desktop/CORE-PROJECTS/MetaDataManager/bin/Debug/netcoreapp2.0/MetaDataManager.runtimeconfig.dev.json
+/Users/Carlos/Desktop/CORE-PROJECTS/MetaDataManager/bin/Debug/netcoreapp2.0/MetaDataManager.dll
+/Users/Carlos/Desktop/CORE-PROJECTS/MetaDataManager/bin/Debug/netcoreapp2.0/MetaDataManager.pdb
+/Users/Carlos/Desktop/CORE-PROJECTS/MetaDataManager/obj/Debug/netcoreapp2.0/MetaDataManager.csproj.CoreCompileInputs.cache
+/Users/Carlos/Desktop/CORE-PROJECTS/MetaDataManager/obj/Debug/netcoreapp2.0/MetaDataManager.AssemblyInfoInputs.cache
+/Users/Carlos/Desktop/CORE-PROJECTS/MetaDataManager/obj/Debug/netcoreapp2.0/MetaDataManager.AssemblyInfo.cs
+/Users/Carlos/Desktop/CORE-PROJECTS/MetaDataManager/obj/Debug/netcoreapp2.0/MetaDataManager.dll
+/Users/Carlos/Desktop/CORE-PROJECTS/MetaDataManager/obj/Debug/netcoreapp2.0/MetaDataManager.pdb

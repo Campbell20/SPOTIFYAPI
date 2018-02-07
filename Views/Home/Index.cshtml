@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div>
+
+    <div class="row">
+        Content:
+      <ul>
+       @foreach (var artist in (dynamic)ViewData["Artists"])
+       {
+           <ul>
+            @foreach(var image in (dynamic)artist.Images){
+                if(@image.Width == 64){
+                    <li><img src="@image.Url"></li>
+                }
+            }
+            </ul>
+            <li><a target="_blank" href="https://open.spotify.com/artist/@artist.Id">@artist.Name</a></li>
+       }
+       </ul>  
+    </div>
+
+</div>

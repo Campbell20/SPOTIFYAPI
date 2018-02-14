@@ -8,3 +8,13 @@
 /Users/Carlos/Desktop/CORE-PROJECTS/MetaDataManager/obj/Debug/netcoreapp2.0/MetaDataManager.AssemblyInfo.cs
 /Users/Carlos/Desktop/CORE-PROJECTS/MetaDataManager/obj/Debug/netcoreapp2.0/MetaDataManager.dll
 /Users/Carlos/Desktop/CORE-PROJECTS/MetaDataManager/obj/Debug/netcoreapp2.0/MetaDataManager.pdb
+C:\Users\jcamp\Desktop\DOTNETCOREAPPS\SPOTIFYAPI\bin\Debug\netcoreapp2.0\MetaDataManager.deps.json
+C:\Users\jcamp\Desktop\DOTNETCOREAPPS\SPOTIFYAPI\bin\Debug\netcoreapp2.0\MetaDataManager.runtimeconfig.json
+C:\Users\jcamp\Desktop\DOTNETCOREAPPS\SPOTIFYAPI\bin\Debug\netcoreapp2.0\MetaDataManager.runtimeconfig.dev.json
+C:\Users\jcamp\Desktop\DOTNETCOREAPPS\SPOTIFYAPI\bin\Debug\netcoreapp2.0\MetaDataManager.dll
+C:\Users\jcamp\Desktop\DOTNETCOREAPPS\SPOTIFYAPI\bin\Debug\netcoreapp2.0\MetaDataManager.pdb
+C:\Users\jcamp\Desktop\DOTNETCOREAPPS\SPOTIFYAPI\obj\Debug\netcoreapp2.0\MetaDataManager.csproj.CoreCompileInputs.cache
+C:\Users\jcamp\Desktop\DOTNETCOREAPPS\SPOTIFYAPI\obj\Debug\netcoreapp2.0\MetaDataManager.AssemblyInfoInputs.cache
+C:\Users\jcamp\Desktop\DOTNETCOREAPPS\SPOTIFYAPI\obj\Debug\netcoreapp2.0\MetaDataManager.AssemblyInfo.cs
+C:\Users\jcamp\Desktop\DOTNETCOREAPPS\SPOTIFYAPI\obj\Debug\netcoreapp2.0\MetaDataManager.dll
+C:\Users\jcamp\Desktop\DOTNETCOREAPPS\SPOTIFYAPI\obj\Debug\netcoreapp2.0\MetaDataManager.pdb

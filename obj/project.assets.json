@@ -5796,17 +5796,17 @@
       ]
     },
     "Microsoft.CodeAnalysis.Analyzers/1.1.0": {
-      "sha512": "o7BNzE+OGL74uNwjCVhtDO4nqdW55fDXDff4+9lTCt5CnOODhLn8LmmascbWzDTwTGEov5qV2c7mEZ8WzSuO+A==",
+      "sha512": "HS3iRWZKcUw/8eZ/08GXKY2Bn7xNzQPzf8gRPHGSowX7u7XXu9i9YEaBeBNKUXWfI7qjvT2zXtLUvbN0hds8vg==",
       "type": "package",
       "path": "microsoft.codeanalysis.analyzers/1.1.0",
       "files": [
-        "Microsoft.CodeAnalysis.Analyzers.1.1.0.nupkg.sha512",
-        "Microsoft.CodeAnalysis.Analyzers.nuspec",
         "ThirdPartyNotices.rtf",
         "analyzers/dotnet/cs/Microsoft.CodeAnalysis.Analyzers.dll",
         "analyzers/dotnet/cs/Microsoft.CodeAnalysis.CSharp.Analyzers.dll",
         "analyzers/dotnet/vb/Microsoft.CodeAnalysis.Analyzers.dll",
         "analyzers/dotnet/vb/Microsoft.CodeAnalysis.VisualBasic.Analyzers.dll",
+        "microsoft.codeanalysis.analyzers.1.1.0.nupkg.sha512",
+        "microsoft.codeanalysis.analyzers.nuspec",
         "tools/install.ps1",
         "tools/uninstall.ps1"
       ]
@@ -9619,12 +9619,10 @@
       ]
     },
     "System.Linq.Queryable/4.0.1": {
-      "sha512": "fXGaIBNVHN2zSU6wXWvS1a/FsvsL2JEzigdldxTwfAgHR7LXMKQnOiMFAlZRmMi/uBsZNwP2uS+NwAzi24MCAA==",
+      "sha512": "Yn/WfYe9RoRfmSLvUt2JerP0BTGGykCZkQPgojaxgzF2N0oPo+/AhB8TXOpdCcNlrG3VRtsamtK2uzsp3cqRVw==",
       "type": "package",
       "path": "system.linq.queryable/4.0.1",
       "files": [
-        "System.Linq.Queryable.4.0.1.nupkg.sha512",
-        "System.Linq.Queryable.nuspec",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/monoandroid10/_._",
@@ -9672,7 +9670,9 @@
         "ref/xamarinios10/_._",
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._"
+        "ref/xamarinwatchos10/_._",
+        "system.linq.queryable.4.0.1.nupkg.sha512",
+        "system.linq.queryable.nuspec"
       ]
     },
     "System.Net.Http/4.3.0": {
@@ -12559,28 +12559,30 @@
     ]
   },
   "packageFolders": {
-    "/Users/Carlos/.nuget/packages/": {},
-    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\jcamp\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Carlos/Desktop/CORE-PROJECTS/MetaDataManager/MetaDataManager.csproj",
+      "projectUniqueName": "C:\\Users\\jcamp\\Desktop\\DOTNETCOREAPPS\\SPOTIFYAPI\\MetaDataManager.csproj",
       "projectName": "MetaDataManager",
-      "projectPath": "/Users/Carlos/Desktop/CORE-PROJECTS/MetaDataManager/MetaDataManager.csproj",
-      "packagesPath": "/Users/Carlos/.nuget/packages/",
-      "outputPath": "/Users/Carlos/Desktop/CORE-PROJECTS/MetaDataManager/obj/",
+      "projectPath": "C:\\Users\\jcamp\\Desktop\\DOTNETCOREAPPS\\SPOTIFYAPI\\MetaDataManager.csproj",
+      "packagesPath": "C:\\Users\\jcamp\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jcamp\\Desktop\\DOTNETCOREAPPS\\SPOTIFYAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/Carlos/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\jcamp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

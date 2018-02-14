@@ -4,7 +4,38 @@
 
 
 <div>
+<form method="POST">
+    <label for="ArtistName">Artist Name</label>
+    <input type="text" id="ArtistName" name="ArtistName" placeholder=" Type an Artist's Name. " />
+    <label for="SongName">Song Name</label>
+    <input type="text" id="SongName" name="SongName" placeholder=" Type a Song Name. " />
+    <input type="submit" />
+</form>
 
+@if(ViewData["Songs"] != null)
+{
+    <div class="row">
+        Content:
+      <ul>
+       @foreach (var artist in (dynamic)ViewData["Songs"])
+       {
+           <ul>
+            @foreach(var image in (dynamic)artist.Album.Images){
+                if(@image.Width == 64){
+                    <li><img src="@image.Url"></li>
+                }
+            }
+            </ul>
+            <li><a target="_blank" href="https://open.spotify.com/artist/@artist.Artists[0].Id">@artist.Album.Name</a></li>
+       }
+       </ul>  
+    </div>
+    }
+
+
+
+@if(ViewData["Artists"] != null)
+{
     <div class="row">
         Content:
       <ul>
@@ -12,7 +43,7 @@
        {
            <ul>
             @foreach(var image in (dynamic)artist.Images){
-                if(@image.Width == 64){
+                if(@image.Width == 160){
                     <li><img src="@image.Url"></li>
                 }
             }
@@ -21,5 +52,7 @@
        }
        </ul>  
     </div>
+    }
+
 
 </div>

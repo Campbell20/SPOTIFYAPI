@@ -12,6 +12,8 @@ using SpotifyAPI.Web.Enums; //Enums
 using SpotifyAPI.Web.Models; //Models for the JSON-responses
 using Newtonsoft.Json;
 
+using PagedList;
+
 namespace MetaDataManager.Controllers
 {
     public class HomeController : Controller
@@ -26,7 +28,7 @@ namespace MetaDataManager.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Index(ArtistNameModel artistNameModel)
+        public async Task<IActionResult> Index(ArtistNameModel artistNameModel, int? page)
         {
              if (ModelState.IsValid)
                 {
@@ -50,25 +52,43 @@ namespace MetaDataManager.Controllers
                 AccessToken = token.AccessToken,
                 UseAuth = true
             };
+
+            var pageNumber = page ?? 1; // if no page was specified in the querystring, default to the first page (1)
             
             //SearchItem track = spotify.SearchItems("roadhouse+blues", SearchType.Album | SearchType.Playlist);
             //var track = spotify.SearchItems("roadhouse+blues", SearchType.Album | SearchType.Playlist);
-            var track = spotify.SearchItems(artistNameModel.ArtistName, SearchType.Artist | SearchType.Playlist);
-            var songName = spotify.SearchItems(artistNameModel.SongName, SearchType.Track | SearchType.Playlist);
+
+             var songNames = spotify.SearchItems(artistNameModel.SongName, SearchType.Track | SearchType.Playlist);
+             var artists = spotify.SearchItems(artistNameModel.ArtistName, SearchType.Artist | SearchType.Playlist);
            
             if(!string.IsNullOrEmpty(artistNameModel.SongName))
             {
-                ViewData["SongJson"] =  JsonConvert.SerializeObject(songName.Tracks);
-                ViewData["Songs"] = songName.Tracks.Items.ToList();
+                var songName = songNames.Tracks.Items.AsQueryable();
+                var onePage = songName.ToPagedList(pageNumber, 3); // will only contain 25 products max because of the pageSize
+
+                //ViewData["SongJson"] =  JsonConvert.SerializeObject(songName.Tracks);
+                ViewData["Songs"] = onePage.ToList();
+
             }else if(!string.IsNullOrEmpty(artistNameModel.ArtistName))
             {
-                ViewData["ArtistsJson"] = JsonConvert.SerializeObject(track.Artists);
-                ViewData["Artists"] = track.Artists.Items.ToList();
+
+                
+                var artist = artists.Artists.Items.AsQueryable();
+                var onePage = artist.ToPagedList(pageNumber, 3); // will only contain 25 products max because of the pageSize
+                
+                // ViewData["ArtistsJson"] = JsonConvert.SerializeObject(track.Artists);
+                // ViewData["Artists"] = track.Artists.Items.ToList();
+
+                ViewData["Artists"] = onePage.ToList();
+
             }
 
-
+                
+  
            }
-    
+
+        
+
             return View();
         }
 
